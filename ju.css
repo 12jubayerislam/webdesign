@@ -1,0 +1,180 @@
+
+body {
+    background-color: #0b0e11;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #00FFFF;
+  border-bottom: 2px solid #00FFFF;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* কার্ড কন্টেইনার */
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* প্রতিটি সফটওয়্যার কার্ডের স্টাইল */
+.software-card {
+    background-color: #1c1f26;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.software-card:hover {
+    transform: translateY(-5px);
+    border-color: #00FFFF;
+}
+
+.category-label {
+    color: #00FFFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.software-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.purpose-text {
+    font-size: 14px;
+    color: #aaa;
+    margin-bottom: 20px;
+    min-height: 40px;
+}
+
+/* ডাউনলোড বাটন */
+.download-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0;
+    background-color: transparent;
+    color: #00FFFF;
+    border: 2px solid #00FFFF;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #00FFFF;
+    color: #000;
+}
+
+
+
+
+/* CSS */
+.note-box {
+    margin-top: 40px;
+    background: rgba(0, 242, 255, 0.05); /* হালকা সায়ান ট্রান্সপারেন্ট */
+    padding: 20px;
+    border: 1px solid rgba(0, 242, 255, 0.3); /* সরু বর্ডার */
+    border-left: 5px solid #00f2ff; /* বাম পাশে মোটা সলিড বর্ডার */
+    border-radius: 10px;
+    max-width: 800px;
+    color: #e0e0e0;
+}
+
+/* ফুটার স্টাইল */
+.main-footer {
+    width: 100%;
+    background-color: #0b0e11; /* ব্যাকগ্রাউন্ডের সাথে মিল রেখে */
+    border-top: 1px solid #333;
+    padding: 30px 0;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    width: 100%;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.footer-info p {
+    font-size: 18px;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.footer-info span {
+    color: #00f2ff; /* আপনার সায়ান কালার */
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.footer-menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.footer-menu li a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-menu li a:hover {
+    color: #00f2ff; /* হোভার করলে সায়ান হবে */
+}
+
+.footer-bottom {
+    font-size: 12px;
+    color: #555;
+    border-top: 1px solid #1c1f26;
+    padding-top: 15px;
+}
+
+.welcome-section {
+    width: 100%;
+    text-align: center;
+    margin-top: -20px; /* পেজের একদম উপরে নিয়ে যাওয়ার জন্য */
+    margin-bottom: 30px; /* শিরোনাম থেকে কিছুটা দূরত্ব বজায় রাখার জন্য */
+}
+
+/* "WELCOME!" লেখাটির স্টাইল */
+.welcome-text {
+    font-size: 16px; /* ছোট কিন্তু স্পষ্ট */
+    color: #00f2ff; /* আপনার উজ্জ্বল সবুজ কালার */
+    font-weight: bold;
+    text-transform: uppercase; /* সব বড় হাতের অক্ষর */
+    letter-spacing: 2px; /* অক্ষরের মাঝে কিছুটা ফাঁকা জায়গা */
+    margin: 0;
+}
+
+/* "to your essential toolkit..." লেখাটির স্টাইল */
+.welcome-sub {
+    font-size: 14px; /* আরও ছোট */
+    color: #a0a0a0; /* হালকা ধূসর টেক্সট, যা পড়ার সুবিধা বাড়ায় */
+    margin: 5px 0 0 0;
+}
